@@ -1,0 +1,14 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title File Metadata Microservice
+    link(rel='stylesheet', href='style.css')
+  body
+    h1 File Metadata Microservice
+    h3 Submit a file and get size in bytes
+    form(action='getfilesize', method='post', enctype='multipart/form-data')
+      //- input(type='file', name='file', multiple)
+      input(type='file', name='file')
+      button(type='submit') submit
